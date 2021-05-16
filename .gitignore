@@ -11,3 +11,5 @@ backend/salendar/src/main/resources/application.yml
 *.yml
 ucc.mp4
 시연영상 최종.mp4
+
+*.DS_Store
