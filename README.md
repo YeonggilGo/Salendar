@@ -5,6 +5,10 @@
 > Maintainer: 최정휴, 고영길, 윤혜민, 김지영, 현성섭
 >
 > Sale 과 Calendar 를 합쳐서 Salendar
+>
+> 홍보 UCC : https://youtu.be/NMn2hWyYnvs (제작: 고영길)
+>
+> 시연 영상 : https://youtu.be/iRwvXgg9XvU (제작: 고영길)
 
 
 

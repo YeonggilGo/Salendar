@@ -7,3 +7,7 @@
 !.vscode/launch.json
 !.vscode/extensions.json
 *.code-workspace
+backend/salendar/src/main/resources/application.yml
+*.yml
+ucc.mp4
+시연영상 최종.mp4

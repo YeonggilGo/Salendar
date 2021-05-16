@@ -7,7 +7,7 @@ import backend.server.salendar.service.UserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
-import lombok.RequiredArgsConstructor;
+import lombok.RequiredArgsConstructor;s
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -109,7 +109,7 @@ public class UserController {
     }
 
 
-//     프로필 이미지 설정 -> 이건 DB에 들어가는 용
+    //     프로필 이미지 설정 -> 이건 DB에 들어가는 용
     @ApiOperation(value = "프로필 이미지 설정", notes = "Img file, token")
     @PutMapping(value = "/token/profileImg")
     public ResponseEntity<String> setUserProfileImg(@ApiParam(value = "image file") @RequestParam("usrImg") MultipartFile file,
@@ -152,7 +152,7 @@ public class UserController {
     //    게시글 좋아요
     @ApiOperation(value = "게시글 좋아요 ", notes = "token, board")
     @PostMapping(value = "/token/like/{boardNo}")
-    public ResponseEntity<String> likePost(@PathVariable("boardNo") String no, HttpServletRequest request){
+    public ResponseEntity<String> likePost(@PathVariable("boardNo") String no, HttpServletRequest request) {
         try {
             Long boardNo = Long.parseLong(no);
             userService.likePost(JwtTokenProvider.resolveToken(request), boardNo);
@@ -165,7 +165,7 @@ public class UserController {
     //    게시글 좋아요 취소
     @ApiOperation(value = "게시글 좋아요 취소", notes = "token, board")
     @PostMapping(value = "/token/unlike/{boardNo}")
-    public ResponseEntity<String> unlikePost(@PathVariable("boardNo") String no, HttpServletRequest request){
+    public ResponseEntity<String> unlikePost(@PathVariable("boardNo") String no, HttpServletRequest request) {
         try {
             Long boardNo = Long.parseLong(no);
             userService.unlikePost(JwtTokenProvider.resolveToken(request), boardNo);
